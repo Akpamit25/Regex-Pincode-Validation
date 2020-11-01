@@ -17,7 +17,7 @@ public class PinCode {
 	}
 
 	public void checkPinCode(String str) {
-		String regex = "^[1-9]?[0-9]{5}$";
+		String regex = "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(str);
 		boolean valid = matcher.matches();
@@ -29,4 +29,4 @@ public class PinCode {
 
 	}
 }
-/* UC-3 */
+/* UC-4 */
